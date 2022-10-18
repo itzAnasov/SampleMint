@@ -1,0 +1,32 @@
+{
+  "name": "SampleMint",
+  "application": {
+    "title": "Anas Ben Rahim.",
+    "icon": "assets/images/favicon.png",
+    "display": "standalone",
+    "orientation": "portrait",
+    "meta": {
+      "viewport": "width=device-width, initial-scale=1, user-scalable=no",
+      "description": "☪",
+      "charset": "utf-8"
+    }
+  },
+  "source-directories": [
+    "src"
+  ],
+  "external": {
+    "javascripts": [
+      "assets/js/typewriter-effect/core.js"
+    ]
+  },
+  "dependencies": {
+    "mint-ui": {
+      "repository": "https://github.com/mint-lang/mint-ui",
+      "constraint": "5.0.0 <= v < 6.0.0"
+    },
+    "mint-color": {
+      "repository": "https://github.com/mint-lang/mint-color",
+      "constraint": "0.5.0 <= v < 1.0.0"
+    }
+  }
+}
