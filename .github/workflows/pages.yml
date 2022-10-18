@@ -1,7 +1,4 @@
 - name: Setup Mint
-  # You may pin to the exact commit or the version.
-  # uses: fabasoad/setup-mint-action@c3a27eddb8647c1b65dc64eb07ab6bfee7455afa
   uses: fabasoad/setup-mint-action@v1.1.0
   with:
-    # Mint version.
-    version: # optional, default is 0.16.1
+    version: 0.16.0
