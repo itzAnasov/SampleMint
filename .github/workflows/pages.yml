@@ -1,4 +1,0 @@
-- name: Setup Mint
-  uses: fabasoad/setup-mint-action@v1.1.0
-  with:
-    version: 0.16.0
