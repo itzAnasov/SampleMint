@@ -1,24 +1,7 @@
-name: pages
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    
-    steps:
-      - uses: actions/checkout@v3
-      - name: Generate document
-        run: |
-          wget --no-verbose -O mint https://mint-lang.s3-eu-west-1.amazonaws.com/mint-master-linux
-          chmod +x ./mint
-          sudo mv ./mint /usr/local/bin/mint
-          mint build --skip-service-worker --relative
-      - name: Publish Documentation on GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+- name: Setup Mint
+  # You may pin to the exact commit or the version.
+  # uses: fabasoad/setup-mint-action@c3a27eddb8647c1b65dc64eb07ab6bfee7455afa
+  uses: fabasoad/setup-mint-action@v1.1.0
+  with:
+    # Mint version.
+    version: # optional, default is 0.16.1
